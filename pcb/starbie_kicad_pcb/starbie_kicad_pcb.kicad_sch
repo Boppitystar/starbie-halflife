@@ -695,6 +695,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Seeed_Studio_XIAO_Series:XIAO-ESP32-C3-SMD"
 			(pin_names
 				(offset 1.016)
@@ -1900,6 +2040,18 @@
 		)
 	)
 	(rectangle
+		(start 99.06 113.03)
+		(end 134.62 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "79e8ed2b-40bd-47de-8a8b-914adb35d5a4")
+	)
+	(rectangle
 		(start 142.24 113.03)
 		(end 171.45 139.7)
 		(stroke
@@ -1966,6 +2118,16 @@
 			)
 		)
 		(uuid "5c25950d-c2e4-46ad-ba9e-ec79b64dfbfe")
+	)
+	(text "ENVIRONMENT \nSENSOR\n"
+		(exclude_from_sim no)
+		(at 127.254 116.078 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5de08723-5070-406e-ae71-001d31d99d6a")
 	)
 	(text "BUTTONS"
 		(exclude_from_sim no)
@@ -2137,6 +2299,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 147.32) (xy 127 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fc2d672-623a-4544-b077-80940dea9eba")
+	)
+	(wire
+		(pts
 			(xy 203.2 78.74) (xy 203.2 76.2)
 		)
 		(stroke
@@ -2194,6 +2366,16 @@
 			(type default)
 		)
 		(uuid "aa41333f-c3fc-4cd5-ab90-83150052e5f6")
+	)
+	(wire
+		(pts
+			(xy 127 146.05) (xy 127 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d25bf1b0-026f-4fec-b517-64b8e56a1c22")
 	)
 	(wire
 		(pts
@@ -2285,6 +2467,16 @@
 		)
 		(uuid "7800001d-22ac-46c8-b542-1f7f51ef568f")
 	)
+	(label "DHT11 DATA"
+		(at 121.92 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c132e0c-dc15-43a5-a126-6aa336150b3a")
+	)
 	(label "SDA"
 		(at 153.67 132.08 270)
 		(effects
@@ -2314,6 +2506,16 @@
 			(justify right bottom)
 		)
 		(uuid "b2717e36-97d2-406f-abed-e4b385d0d01b")
+	)
+	(label "DHT11 DATA"
+		(at 121.92 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3c8aa8d-778b-4f49-99d7-924a4840e26e")
 	)
 	(label "SCL"
 		(at 186.69 115.57 180)
@@ -2526,7 +2728,7 @@
 	)
 	(symbol
 		(lib_id "Sensor:DHT11")
-		(at 123.19 127 0)
+		(at 114.3 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2536,8 +2738,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "259b97a6-49eb-454f-b533-00dd96b1efbf")
-		(property "Reference" "U2"
-			(at 116.84 125.7299 0)
+		(property "Reference" "U1"
+			(at 107.95 126.9999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2548,7 +2750,7 @@
 			)
 		)
 		(property "Value" "DHT11"
-			(at 116.84 128.2699 0)
+			(at 107.95 129.5399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2559,7 +2761,7 @@
 			)
 		)
 		(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
-			(at 123.19 137.16 0)
+			(at 114.3 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2570,7 +2772,7 @@
 			)
 		)
 		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf"
-			(at 127 120.65 0)
+			(at 118.11 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2581,7 +2783,7 @@
 			)
 		)
 		(property "Description" "3.3V to 5.5V, temperature and humidity module, DHT11"
-			(at 123.19 127 0)
+			(at 114.3 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2606,7 +2808,7 @@
 		(instances
 			(project "starbie_kicad_pcb"
 				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2722,7 +2924,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 158.75 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2849,6 +3051,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 127 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "616c42bc-a381-48a3-98fb-20bee82b0a71")
+		(property "Reference" "#PWR013"
+			(at 127 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 127 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 127 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dee00ad5-345b-4756-b286-3eed93850362")
+		)
+		(instances
+			(project "starbie_kicad_pcb"
+				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x08_Pin")
 		(at 120.65 92.71 0)
 		(unit 1)
@@ -2880,7 +3160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 120.65 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2947,6 +3227,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 114.3 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79a51f38-b19e-4eca-847b-d7b1fe3f17f9")
+		(property "Reference" "#PWR011"
+			(at 114.3 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 114.3 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 114.3 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f785cf1-a4f1-43e1-8ee5-3a08bed00bb4")
+		)
+		(instances
+			(project "starbie_kicad_pcb"
+				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-C3-SMD")
 		(at 209.55 107.95 0)
 		(unit 1)
@@ -2958,7 +3316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "810f2657-5a22-496a-ba8f-38e869510077")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 212.9633 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,7 +3338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-ESP32-C3-SMD"
+		(property "Footprint" "starbie footprints:XIAO-ESP32-C6-DIP"
 			(at 170.942 132.334 0)
 			(hide yes)
 			(show_name no)
@@ -3082,7 +3440,7 @@
 		(instances
 			(project "starbie_kicad_pcb"
 				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -3120,7 +3478,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 158.75 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3433,7 +3791,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "starbie footprints:Display_128x64_096_I2C"
 			(at 156.21 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -3482,6 +3840,84 @@
 			(project "starbie_kicad_pcb"
 				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dfe5708-314d-4474-9d18-7f02fecaf21c")
+		(property "Reference" "#PWR012"
+			(at 114.3 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6420d47a-ec85-427c-972f-524864579609")
+		)
+		(instances
+			(project "starbie_kicad_pcb"
+				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3716,6 +4152,88 @@
 			(project "starbie_kicad_pcb"
 				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 127 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f47fb56c-28df-4c1b-ac9b-ec78c56cef22")
+		(property "Reference" "R1"
+			(at 129.54 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 129.54 143.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+			(at 125.222 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2433cf72-f982-4d2c-8f48-8fcee029467a")
+		)
+		(pin "2"
+			(uuid "d2ce8cc8-d95c-4d93-8449-86d0744803b1")
+		)
+		(instances
+			(project "starbie_kicad_pcb"
+				(path "/4a67d11d-5d83-46ff-9650-4b013ae40fa0"
+					(reference "R1")
 					(unit 1)
 				)
 			)
